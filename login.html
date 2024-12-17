@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизація</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Авторизація</h1>
+    </header>
+
+    <main>
+        <section class="auth-section">
+            <form action="login_process.php" method="POST">
+                <fieldset>
+                    <legend>Вхід в акаунт</legend>
+
+                    <label for="email">Електронна пошта:</label>
+                    <input type="email" id="email" name="email" required placeholder="Введіть вашу електронну пошту">
+
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password" required placeholder="Введіть пароль">
+
+                    <div>
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Запам'ятати мене</label>
+                    </div>
+
+                    <button type="submit">Увійти</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Літакова компанія</p>
+    </footer>
+
+    <!-- Панель управління стилями -->
+    <div class="control-panel">
+        <h3>Зміни стилі</h3>
+
+        <label for="text-color">Колір тексту:</label>
+        <input type="color" id="text-color" name="text-color">
+
+        <label for="font-size">Розмір шрифту:</label>
+        <input type="range" id="font-size" min="10" max="50" value="16">
+
+        <label for="bg-color">Колір фону:</label>
+        <input type="color" id="bg-color" name="bg-color">
+
+        <button id="reset-button">Скинути стилі</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

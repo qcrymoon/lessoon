@@ -1,0 +1,250 @@
+/* Основные стили для всего сайта */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Верхняя часть сайта */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #34495e; /* Цвет фона шапки */
+    padding: 20px;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.site-title {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold; /* Жирный шрифт для названия */
+}
+
+.login-link {
+    background-color: #3498db;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-weight: bold; /* Жирный шрифт для ссылки */
+}
+
+.login-link:hover {
+    background-color: #2980b9;
+}
+
+/* Боковая панель */
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 30px 20px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin: 25px 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.menu li a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.menu li a:hover {
+    background-color: #1abc9c;
+    transform: scale(1.05);
+}
+
+/* Основной контент */
+.main-content {
+    margin-left: 270px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Видео */
+.video-container {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Стили для раздела "Про нас" */
+.about-us {
+    padding: 20px;
+    background-color: #34495e;
+    color: white;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+.about-us h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-us ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+/* Для мобильных устройств */
+@media (max-width: 768px) {
+    .header-container {
+        padding: 10px;
+    }
+
+    .menu li a {
+        font-size: 16px;
+    }
+}
+/* Стилі для основної сторінки */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #34495e;
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.auth-section {
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 300px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Стилі для футера */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #34495e;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Панель управління стилями */
+.control-panel {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.control-panel label {
+    display: block;
+    margin-top: 10px;
+}
+
+.control-panel input[type="color"],
+.control-panel input[type="range"] {
+    width: 100%;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.control-panel button {
+    width: 100%;
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.control-panel button:hover {
+    background-color: #c0392b;
+}
